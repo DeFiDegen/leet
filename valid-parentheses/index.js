@@ -1,6 +1,6 @@
 //  COMPLETE
  
- const isValid = (string) => {
+const isValid = (string) => {
   let closingCharacter = [];
   const parentheses = {
     "(": ")",
