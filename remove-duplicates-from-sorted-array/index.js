@@ -1,3 +1,5 @@
+// COMPLETED
+
 const removeDuplicates = (nums) => {
   const numbers = {};
   const array = [];

@@ -1,3 +1,5 @@
+// COMPLETE
+
 const searchInsert = (nums, target) => {
   let index = 0; 
   while (nums[index] < target) { index++ };

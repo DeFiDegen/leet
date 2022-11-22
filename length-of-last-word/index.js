@@ -1,3 +1,5 @@
+// COMPLETED
+
 const lengthOfLastWord = (s) => {
   array = [];
   s.split(" ").forEach((string) => {

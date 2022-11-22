@@ -1,3 +1,5 @@
+// COMPLETED
+
 const plusOne = (digits) => {
   let array = [];
   if (digits.length < 16) {

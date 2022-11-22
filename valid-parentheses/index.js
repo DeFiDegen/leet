@@ -1,4 +1,6 @@
-const isValid = (string) => {
+//  COMPLETE
+ 
+ const isValid = (string) => {
   let closingCharacter = [];
   const parentheses = {
     "(": ")",
@@ -18,13 +20,9 @@ const isValid = (string) => {
       closingCharacter.push(parentheses[character]);
     } else {
       // if the character is a closing tag and does NOT match it's corresponding open tag
-      if (character !== closingCharacter[(closingCharacter.length - 1)]) {
-        break
-      }
+      if (character !== closingCharacter[(closingCharacter.length - 1)]) { break }
       // if the character is a closing tag and matches it's corresponding open tag
-      if (character === closingCharacter[(closingCharacter.length - 1)]) {
-        closingCharacter.pop();
-      }
+      if (character === closingCharacter[(closingCharacter.length - 1)]) { closingCharacter.pop() }
     }
   }
 

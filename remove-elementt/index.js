@@ -1,10 +1,10 @@
+// COMPLETE
+
 const removeElement = (nums, val) => {
   array = [];
   nums.forEach(number => { if (number !== val) { array.push(number) } });
   return array;
 }
-
-// ****THIS SOLUTION WORKS FOR ON MY MACHINE BUT NOT ON LEETCODE. THE OUTPUT IS SOMEHOW DIFFERENT****
  
 const input1 = {
   nums: [3,2,2,3],

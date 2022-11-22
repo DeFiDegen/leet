@@ -1,3 +1,5 @@
+// COMPETED
+
 const mergeTwoLists = (list1, list2) => {
   const newArray = [];
   const object = {};
@@ -20,7 +22,7 @@ const mergeTwoLists = (list1, list2) => {
 
   Object.keys(object).forEach(key => {
     while (object[key] > 0) {
-      newArray.push(key);
+      newArray.push(parseInt(key, 10));
       object[key] --;
     }
   });
