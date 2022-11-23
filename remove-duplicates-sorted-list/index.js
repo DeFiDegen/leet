@@ -1,3 +1,4 @@
+// COMPLETED
 const deleteDuplicates = (head) => {
   const object = {};
   const newArray = [];
