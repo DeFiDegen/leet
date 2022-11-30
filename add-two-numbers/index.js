@@ -1,4 +1,4 @@
-// INCOMPLETE
+// COMPLETED
 const addTwoNumbers = (l1, l2) => {
   // Split array elements into single number for both arrays
   // Add two numbers
