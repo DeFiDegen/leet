@@ -1,24 +1,23 @@
-// INCOMPLETE
+// COMPLETED
 
 const lengthOfLongestSubstring = (string) => {
   let result = 0;
   let activeSubstring = '';
   const subStrings = [];
-  let object = {
-    // a: true,
-    // b: true,
-  }
-  // split string into
+  let object = {};
   const array = string.split('');
   if (array.length === 1) {
     result = 1;
   } else {
     array.forEach((s) => {
       if (object[s]) {
-        if (s === activeSubstring.charAt(0)) {
+        if (activeSubstring.match(s)) {
           subStrings.push(activeSubstring);
           activeSubstring += s;
-          activeSubstring = activeSubstring.slice(1);
+          activeSubstring = activeSubstring.slice(activeSubstring.indexOf(s) + 1);
+        } else if (!activeSubstring.match(s)) {
+          subStrings.push(activeSubstring);
+          activeSubstring += s;
         } else {
           subStrings.push(activeSubstring);
           activeSubstring = s;
@@ -67,6 +66,10 @@ const example = {
   seven: {
     input: "tmmzuxt",
     output: 5
+  },
+  eight: {
+    input: "ohvhjdml",
+    output: 6
   }
 }
 
